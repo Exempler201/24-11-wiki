@@ -22,7 +22,7 @@ Weitere Informationen zur Funktionsweise von WSL 2 findest du in der [Microsoft-
 
 ## Bedeutung von WSL
 
-1. **Vereinfachung der Entwicklung:** Viele Entwickler benötigen Zugang zu Linux-Umgebungen für die Entwicklung, insbesondere bei der Arbeit mit Webservern, Datenbanken oder Cloud-Diensten. WSL ermöglicht dies ohne den Aufwand, eine separate Linux-Installation zu verwalten. ([TechRadar zu WSL](https://www.techradar.com/news/windows-subsystem-for-linux))
+1. **Vereinfachung der Entwicklung:** Viele Entwickler benötigen Zugang zu Linux-Umgebungen für die Entwicklung, insbesondere bei der Arbeit mit Webservern, Datenbanken oder Cloud-Diensten. WSL ermöglicht dies ohne den Aufwand, eine separate Linux-Installation zu verwalten.
 
 2. **Cross-Plattform-Entwicklung:** Entwickler, die Anwendungen für mehrere Plattformen (Windows, Linux, macOS) erstellen müssen, können mit WSL ihre Tools und Skripte auf einer einzigen Plattform testen, was den Entwicklungsprozess vereinfacht. ([Visual Studio Blog - WSL](https://devblogs.microsoft.com/visualstudio/using-wsl-with-visual-studio/))
 
