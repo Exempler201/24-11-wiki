@@ -24,11 +24,11 @@ Weitere Informationen zur Funktionsweise von WSL 2 findest du in der [Microsoft-
 
 1. **Vereinfachung der Entwicklung:** Viele Entwickler benötigen Zugang zu Linux-Umgebungen für die Entwicklung, insbesondere bei der Arbeit mit Webservern, Datenbanken oder Cloud-Diensten. WSL ermöglicht dies ohne den Aufwand, eine separate Linux-Installation zu verwalten.
 
-2. **Cross-Plattform-Entwicklung:** Entwickler, die Anwendungen für mehrere Plattformen (Windows, Linux, macOS) erstellen müssen, können mit WSL ihre Tools und Skripte auf einer einzigen Plattform testen, was den Entwicklungsprozess vereinfacht. ([Visual Studio Blog - WSL](https://devblogs.microsoft.com/visualstudio/using-wsl-with-visual-studio/))
+2. **Cross-Plattform-Entwicklung:** Entwickler, die Anwendungen für mehrere Plattformen (Windows, Linux, macOS) erstellen müssen, können mit WSL ihre Tools und Skripte auf einer einzigen Plattform testen, was den Entwicklungsprozess vereinfacht.
 
 3. **Erhöhte Flexibilität:** WSL erlaubt es Windows-Nutzern, von den Vorteilen beider Welten zu profitieren und ohne großen Aufwand zwischen den beiden Betriebssystemen zu wechseln. Dies ist besonders nützlich für Entwickler, die regelmäßig zwischen Windows und Linux arbeiten müssen. ([Microsoft WSL-Übersicht](https://learn.microsoft.com/en-us/windows/wsl/))
 
-4. **Förderung von Open-Source und Linux-Tools:** WSL hat die Verwendung von Open-Source-Tools auf Windows weiter verbreitet und damit zur stärkeren Akzeptanz von Linux-Technologien auf der Windows-Plattform beigetragen. ([TechCrunch über WSL](https://techcrunch.com/2020/06/24/microsofts-wsl-2-lets-you-run-linux-apps-graphical-and-all/))
+4. **Förderung von Open-Source und Linux-Tools:** WSL hat die Verwendung von Open-Source-Tools auf Windows weiter verbreitet und damit zur stärkeren Akzeptanz von Linux-Technologien auf der Windows-Plattform beigetragen.
 
 ## Fazit
 
