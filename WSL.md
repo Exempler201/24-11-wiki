@@ -141,7 +141,76 @@ Falls du eine andere Linux-Distribution ausprobieren möchtest:
 
 Jetzt bist du bereit, WSL voll auszunutzen und Linux auf Windows zu erleben!
 
+# Virtualisierung im BIOS aktivieren
 
+Die Virtualisierungstechnologie muss im BIOS aktiviert werden, um WSL 2 nutzen zu können. So gehst du vor:
+
+## PC neu starten und ins BIOS/UEFI-Menü gelangen
+
+- Drücke während des Startvorgangs die Taste für den BIOS-Zugang (je nach Hersteller: `DEL`, `F2`, `F10`, `F12` oder `Esc`).
+
+### Virtualisierungstechnologie suchen:
+
+Je nach BIOS-Version und Hersteller kann dies unterschiedlich bezeichnet sein:
+- **Intel-basierte Systeme:** „Intel Virtualization Technology“ oder „VT-x“.
+- **AMD-basierte Systeme:** „SVM Mode“.
+
+### Virtualisierung aktivieren:
+
+- Markiere die Option und stelle sie auf `Enabled`.
+
+### Änderungen speichern:
+
+- Wähle „Save and Exit“ oder drücke die zugehörige Taste (oft `F10`) und bestätige.
+- Starte deinen Computer neu.
+
+---
+
+## 2. Virtual Machine Platform in Windows aktivieren
+
+Nachdem die BIOS-Einstellungen angepasst sind, aktiviere die Virtual Machine Platform in Windows:
+
+### Windows-Features öffnen:
+
+- Drücke `Windows + R`, gib `optionalfeatures` ein und drücke `Enter`.
+
+### Feature aktivieren:
+
+- Setze ein Häkchen bei **Virtual Machine Platform**.
+- Setze ebenfalls ein Häkchen bei **Windows-Subsystem für Linux**, falls dies noch nicht aktiviert ist.
+
+### Neustart ausführen:
+
+- Bestätige und starte deinen Computer neu.
+
+---
+
+## 3. Prüfen, ob WSL jetzt funktioniert
+
+Nach dem Neustart teste WSL erneut:
+
+- Öffne eine **PowerShell** und führe den Befehl aus:
+
+```powershell
+wsl
+```
+
+- Wenn WSL startet, ist das Problem behoben.
+
+---
+
+## 4. Falls weiterhin Probleme auftreten
+
+1. **Windows aktualisieren:** Stelle sicher, dass du die neueste Version von Windows 10 oder Windows 11 verwendest.
+2. **WSL Kernel-Update installieren:** Lade das neueste WSL-Kernel-Update von der [offiziellen Microsoft-Seite](https://aka.ms/wsl2kernel) herunter und installiere es.
+3. **WSL zurücksetzen:** Deinstalliere und installiere WSL erneut:
+
+   ```powershell
+   wsl --unregister <Distribution-Name>
+   wsl --install
+   ```
+
+Nach diesen Schritten sollte WSL 2 ordnungsgemäß funktionieren. 😊
 
 
 **Autor:** Marcel Roger Dorr
