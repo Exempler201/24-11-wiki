@@ -34,4 +34,98 @@ Weitere Informationen zur Funktionsweise von WSL 2 findest du in der [Microsoft-
 
 **WSL** ist ein wichtiges Tool für Entwickler, die auf Windows arbeiten, aber oft mit Linux-Umgebungen oder -Anwendungen zu tun haben. Es erleichtert die Entwicklung und verbessert die Produktivität, ohne die Notwendigkeit, zwischen verschiedenen Systemen hin und her zu wechseln.
 
+
+
+# Anleitung: Installation und Nutzung von WSL (Windows Subsystem for Linux)
+
+## Schritt 1: WSL aktivieren
+1. **PowerShell als Administrator öffnen**:
+   - Klicke auf die Starttaste.
+   - Suche nach "PowerShell".
+   - Wähle "Als Administrator ausführen".
+2. **WSL installieren**:
+   Führe folgenden Befehl aus:
+   ```powershell
+   wsl --install
+   ```
+   - Dies aktiviert WSL, installiert WSL 2 und fügt standardmäßig **Ubuntu** als Linux-Distribution hinzu.
+   - Wenn alles fertig ist, starte deinen Computer neu.
+
+---
+
+## Schritt 2: Linux-Distribution einrichten
+1. Nach dem Neustart öffnet sich ein Fenster zur Einrichtung von Ubuntu (oder einer anderen Distribution).
+2. Folge den Anweisungen:
+   - **Benutzername festlegen**: Gib einen gewünschten Namen ein.
+   - **Passwort setzen**: Wähle ein Passwort (wird bei Bedarf für Admin-Aufgaben in Linux verwendet).
+
+---
+
+## Schritt 3: WSL starten
+- Öffne deine Linux-Distribution:
+  - Suche im Startmenü nach der installierten Distribution (z. B. "Ubuntu").
+  - Alternativ kannst du die PowerShell/Eingabeaufforderung verwenden:
+    ```powershell
+    wsl
+    ```
+  - Jetzt bist du in der Linux-Umgebung und kannst Linux-Befehle verwenden!
+
+---
+
+## Schritt 4: Nützliche Befehle für WSL
+Hier sind ein paar Befehle, die dir bei der Nutzung von WSL helfen können:
+
+1. **Verfügbare Distributionen anzeigen**:
+   ```powershell
+   wsl --list --verbose
+   ```
+   - Zeigt eine Liste aller installierten Distributionen und deren Status.
+
+2. **Linux-Distribution ändern oder upgraden**:
+   ```powershell
+   wsl --set-version <Distribution-Name> 2
+   ```
+   - Ersetze `<Distribution-Name>` durch den Namen deiner Distribution (z. B. "Ubuntu").
+   - Dieser Befehl stellt sicher, dass du WSL 2 (die neuere Version) verwendest.
+
+3. **Linux-Dateisystem durchsuchen**:
+   - Du kannst auf Linux-Dateien direkt über den Windows-Explorer zugreifen:
+     - Öffne den Explorer und gib in die Adressleiste ein:
+       ```
+       \wsl$
+       ```
+
+4. **WSL beenden**:
+   ```powershell
+   wsl --shutdown
+   ```
+
+---
+
+## Schritt 5: Weitere Distributionen installieren
+Falls du eine andere Linux-Distribution ausprobieren möchtest:
+1. Öffne den **Microsoft Store**.
+2. Suche nach Distributionen wie **Debian**, **Kali Linux** oder **openSUSE**.
+3. Installiere die gewünschte Distribution und richte sie wie oben beschrieben ein.
+
+---
+
+## Schritt 6: Tipps und Tricks
+- **Standard-Distribution ändern**:
+  ```powershell
+  wsl --set-default <Distribution-Name>
+  ```
+- **Grafische Linux-Apps verwenden**:
+  WSL 2 unterstützt GUI-Anwendungen unter Linux. Installiere einfach die benötigten Pakete (z. B. `sudo apt install gedit`), und starte sie aus der WSL-Umgebung.
+
+- **Offizielle Dokumentation**:
+  Für detaillierte Informationen und Problembehebung besuche die [offizielle WSL-Seite](https://aka.ms/wsl).
+
+---
+
+Jetzt bist du bereit, WSL voll auszunutzen und Linux auf Windows zu erleben!
+
+
+
+
 **Autor:** Marcel Roger Dorr
