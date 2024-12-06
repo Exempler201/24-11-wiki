@@ -53,7 +53,23 @@ Weitere Informationen zur Funktionsweise von WSL 2 findest du in der [Microsoft-
 
 ---
 
-## Schritt 2: Linux-Distribution einrichten
+## Schritt 2: WSL 2 manuell installieren (falls erforderlich)
+Falls `wsl --install` nicht funktioniert, kannst du WSL 2 manuell einrichten:
+1. Aktiviere die notwendigen Komponenten:
+   ```powershell
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+   ```
+2. Starte deinen Computer neu.
+3. Lade das WSL 2 Kernel-Update von der [offiziellen Microsoft-Seite](https://aka.ms/wsl2kernel) herunter und installiere es.
+4. Setze WSL 2 als Standardversion:
+   ```powershell
+   wsl --set-default-version 2
+   ```
+
+---
+
+## Schritt 3: Linux-Distribution einrichten
 1. Nach dem Neustart öffnet sich ein Fenster zur Einrichtung von Ubuntu (oder einer anderen Distribution).
 2. Folge den Anweisungen:
    - **Benutzername festlegen**: Gib einen gewünschten Namen ein.
@@ -61,7 +77,7 @@ Weitere Informationen zur Funktionsweise von WSL 2 findest du in der [Microsoft-
 
 ---
 
-## Schritt 3: WSL starten
+## Schritt 4: WSL starten
 - Öffne deine Linux-Distribution:
   - Suche im Startmenü nach der installierten Distribution (z. B. "Ubuntu").
   - Alternativ kannst du die PowerShell/Eingabeaufforderung verwenden:
@@ -72,7 +88,7 @@ Weitere Informationen zur Funktionsweise von WSL 2 findest du in der [Microsoft-
 
 ---
 
-## Schritt 4: Nützliche Befehle für WSL
+## Schritt 5: Nützliche Befehle für WSL
 Hier sind ein paar Befehle, die dir bei der Nutzung von WSL helfen können:
 
 1. **Verfügbare Distributionen anzeigen**:
@@ -102,7 +118,7 @@ Hier sind ein paar Befehle, die dir bei der Nutzung von WSL helfen können:
 
 ---
 
-## Schritt 5: Weitere Distributionen installieren
+## Schritt 6: Weitere Distributionen installieren
 Falls du eine andere Linux-Distribution ausprobieren möchtest:
 1. Öffne den **Microsoft Store**.
 2. Suche nach Distributionen wie **Debian**, **Kali Linux** oder **openSUSE**.
@@ -110,7 +126,7 @@ Falls du eine andere Linux-Distribution ausprobieren möchtest:
 
 ---
 
-## Schritt 6: Tipps und Tricks
+## Schritt 7: Tipps und Tricks
 - **Standard-Distribution ändern**:
   ```powershell
   wsl --set-default <Distribution-Name>
