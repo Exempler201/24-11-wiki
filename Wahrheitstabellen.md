@@ -70,4 +70,4 @@
 
 ## Author Marcel Roger Dorr
 
-## PS.: Hab dass frei schnautze geemacht, Liege stark erkältet im Bett, Sorry dass ich heute nicht so aktiv war. Ich habe das im Sheet geamcht aber konnte das nicht screenshooten da der Browser immer abschmiert, ich warte immer noch auf den laptop den meine Frau demnächst mal abholen muss. Habe dass als Markdown von sheet importiert.
+## PS.: Hab dass frei schnautze gemacht, Liege stark erkältet im Bett, Sorry dass ich heute nicht so aktiv war. Ich habe das im Sheet gemacht aber konnte das nicht screenshooten da der Browser immer abschmiert, ich warte immer noch auf den laptop den meine Frau demnächst abholen muss.
