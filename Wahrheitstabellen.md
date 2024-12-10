@@ -66,7 +66,20 @@
 | =TRUE | =FALSE| =TRUE  | =TRUE  | =OR(A4:B4) | =NOT(E4) | =AND(A4:C4) | =OR(B4:D4) | =NOT(G4) | =NOR(F4:H4) | =AND(F4:I4) |
 | =FALSE| =FALSE| =FALSE | =FALSE | =OR(A5:B5) | =NOT(E5) | =AND(A5:C5) | =OR(B5:D5) | =NOT(G5) | =NOR(F5:H5) | =AND(F5:I5) |
 
+## Achtung: Ich habe die Funktion NOR() bei mir hinzugefügt
 
+```
+/**
+ * Benutzerdefinierte NOR-Funktion
+ * @param {...boolean} values Eingabewerte (können mehrere sein)
+ * @return {boolean} Ergebnis der NOR-Operation
+ * Nur WAHR, wenn alle Eingaben FALSCH sind.
+ */
+function NOR(...values) {
+  const hasTrue = values.some(value => Boolean(value));
+  return !hasTrue;
+}
+```
 
 # Author Marcel Roger Dorr
 
