@@ -46,14 +46,14 @@
 
 | A   | B   | C   | A ∨ B | ¬(A ∨ B) | C ∧ ¬(A ∨ B) | ¬(A ∨ B) → (C ∧ ¬(A ∨ B)) |
 |-----|-----|-----|-------|----------|--------------|----------------------------|
-| =TRUE | =TRUE | =TRUE  | =OR(A2:B2) | =NOT(D2) | =AND(C2:E2) | =IF(E2:F2:TRUE) |
-| =TRUE | =TRUE | =FALSE | =OR(A3:B3) | =NOT(D3) | =AND(C3:E3) | =IF(E3:F3:TRUE) |
-| =TRUE | =FALSE| =TRUE  | =OR(A4:B4) | =NOT(D4) | =AND(C4:E4) | =IF(E4:F4:TRUE) |
-| =TRUE | =FALSE| =FALSE | =OR(A5:B5) | =NOT(D5) | =AND(C5:E5) | =IF(E5:F5:TRUE) |
-| =FALSE| =TRUE | =TRUE  | =OR(A6:B6) | =NOT(D6) | =AND(C6:E6) | =IF(E6:F6:TRUE) |
-| =FALSE| =TRUE | =FALSE | =OR(A7:B7) | =NOT(D7) | =AND(C7:E7) | =IF(E7:F7:TRUE) |
-| =FALSE| =FALSE| =TRUE  | =OR(A8:B8) | =NOT(D8) | =AND(C8:E8) | =IF(E8:F8:TRUE) |
-| =FALSE| =FALSE| =FALSE | =OR(A9:B9) | =NOT(D9) | =AND(C9:E9) | =IF(E9:F9:TRUE) |
+| =TRUE | =TRUE | =TRUE  | =OR(A2:B2) | =NOT(D2) | =AND(C2:E2) | =IF(E2;F2;TRUE) |
+| =TRUE | =TRUE | =FALSE | =OR(A3:B3) | =NOT(D3) | =AND(C3:E3) | =IF(E3;F3;TRUE) |
+| =TRUE | =FALSE| =TRUE  | =OR(A4:B4) | =NOT(D4) | =AND(C4:E4) | =IF(E4;F4;TRUE) |
+| =TRUE | =FALSE| =FALSE | =OR(A5:B5) | =NOT(D5) | =AND(C5:E5) | =IF(E5;F5;TRUE) |
+| =FALSE| =TRUE | =TRUE  | =OR(A6:B6) | =NOT(D6) | =AND(C6:E6) | =IF(E6;F6;TRUE) |
+| =FALSE| =TRUE | =FALSE | =OR(A7:B7) | =NOT(D7) | =AND(C7:E7) | =IF(E7;F7;TRUE) |
+| =FALSE| =FALSE| =TRUE  | =OR(A8:B8) | =NOT(D8) | =AND(C8:E8) | =IF(E8;F8;TRUE) |
+| =FALSE| =FALSE| =FALSE | =OR(A9:B9) | =NOT(D9) | =AND(C9:E9) | =IF(E9:F9;TRUE) |
 
 ---
 
